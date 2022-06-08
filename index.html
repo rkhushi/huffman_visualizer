@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Huffman Encoding Visualizer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<link rel="icon" type="image/png" href="img/favicon.jpeg">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="text-center">
+			<h1 style="padding-bottom:20px">Huffman Encoding Visualizer</h1>
+
+			<p class="lead">
+
+			<div class="row">
+				<div class="col-xs-12 show_error"></div>
+			</div>
+
+			<div class="row">
+
+				<form>
+					<div class="form-group">
+						<textarea id="huffman_input" class="form-control" style="width:100%; height:100px;"
+							placeholder="Start typing"></textarea>
+					</div>
+				</form>
+
+			</div>
+
+			<div class="row">
+
+				<div class="box" id="huffman_graph" style="width:100%; height:500px;">
+					<i style="line-height:500px;"></i>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<h2>Huffman Code</h2>
+				<div class="box" id="huffman_bits"
+					style="margin-top:20px; margin-bottom:20px; padding:20px 0px; font-family:Courier New; max-height:500px; overflow-x:hidden; overflow-y:auto;">
+				</div>
+			</div>
+
+			</p>
+		</div>
+	</div>
+
+	<script src="js/libraries/jquery-2.1.3.min.js"></script>
+	<script src="js/libraries/bootstrap.min.js"></script>
+	<script src="js/libraries/jit.js"></script>
+	<script src="js/libraries/binary_tree_visualizer.js"></script>
+	<script src="js/libraries/priority-queue.js"></script>
+
+	<script src="js/huffman/build_character_nodes.js"></script>
+	<script src="js/huffman/build_tree.js"></script>
+	<script src="js/huffman/build_path.js"></script>
+	<script src="js/huffman/encode_string.js"></script>
+
+	<script src="js/file/input.js"></script>
+	<script src="js/file/output.js"></script>
+
+	<script src="js/text/input.js"></script>
+
+	<script src="js/gui/index.js"></script>
+</body>
+
+</html>
